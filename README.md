@@ -3,7 +3,7 @@
 # Pacific Pulse
 Static website for a Polynesian Dance Studio
 
-<!--**Link to project:** http://recruiters-love-seeing-live-demos.com/-->
+**Link to project:** https://mstouttech.github.io/pacific-pulse/index
 
 
 ## How It's Made:
