@@ -1,0 +1,314 @@
+
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 3px;
+}
+
+ul {
+  list-style: none;
+  padding-left:0;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+} 
+
+span {
+  display: block;
+}
+
+.logo {
+  width: 80px;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 40px;
+  background: white;
+  text-align: center;
+  padding-top:10px;
+  color: black;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  border: 1px solid black;
+}
+
+.card-icon {
+  width: 55px;
+  height: 45px;
+}
+
+.beautician-headshot {
+  width: 250px;
+  height: fit-content;
+}
+
+.mosaic-square {
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+}
+
+.mosaic-portrait {
+  width: 120px;
+  height: 215px;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 100;
+  margin: .2em 0;
+}
+strong {
+  font-size: 30px;
+}
+
+.info-paragraph {
+  font-family: sans-serif;
+  letter-spacing: normal;
+  font-size: .8em;
+  line-height: 2;
+}
+button {
+  padding: 10px 20px;
+  border-radius: 0;
+  font-size: .9em;
+  letter-spacing: 1px;
+  background-color: white;
+}
+
+.button-dark {
+  color: white;
+  background-color: black;
+}
+
+.team-title {
+  font-size: .7em;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  padding: 10px;
+}
+
+
+header > nav {
+  display: block;
+}
+
+header > nav > * {
+  float: left;
+}
+
+header > nav .logo, header > nav span {
+  width: 20%;
+}
+
+header >nav >ul {
+  width: 60%;
+  margin: 30px auto 0 auto;
+  min-width: 800px;
+  text-align: center;
+}
+
+header > nav > span {
+  padding-right: 40px;
+  margin-top: 30px;
+  text-align: right;
+}
+header > nav > ul > * {
+  float: left;
+  width: 16.66%;
+}
+// header > nav > .logo {
+//   margin-right: 20px;
+// }
+
+main {
+  background-color:rgb(122, 100, 108);
+  //background-image: url("../images/hero1.PNG");
+  background-size: cover;
+  color: white;
+  height: fit-content;
+  padding: 100px 80px;
+}
+
+main > *{
+  float: left;
+}
+
+main > section:first-of-type {
+  width:60%;
+}
+
+main > section > section+section {
+  background: black;
+  height: fit-content;
+  width: 40%;
+  padding: 20px 0 40px 0;
+  margin-top: 5em;
+}
+
+main > section > section+section >p {
+  font-size: 18px;
+  line-height: 35px;
+  padding: 0 20px 0 23px;
+}
+
+main > section > section+section > button {
+  margin-left: 23px;
+}
+
+main > section > section+section >h5 {
+  margin: 0;
+  border-left: 3px solid white;
+  padding: 20px 20px;
+}
+main > section + section {
+  width: 40%;
+  height: fit-content;
+}
+main > section + section > span {
+  transform: rotate(.25turn);
+  height: 400px;
+  width: 100%;
+  min-width: 428px;
+  margin: 100px 40px;
+  text-align: center;
+}
+main > section + section > section {
+  float: right;
+}
+main > section + section > section >* {
+  float:left;
+}
+
+body > section:first-of-type {
+  padding: 40px 120px;
+}
+body > section:first-of-type >* {
+  width:33.33%;
+  float:left;
+  padding: 20px 50px;
+}
+body > section:first-of-type > section >* {
+  margin: 20px auto;
+  text-align: center;
+}
+
+body > section:nth-child(4) {
+  background-color: lightgray;
+  padding: 40px;
+}
+body > section:nth-child(4)> *{
+  width: 37.5%;
+  float: left;
+  margin: 40px ;
+}
+body > section:nth-child(4)> section:first-of-type {
+  margin-left:10%;
+}
+
+body > section:nth-child(4)> section:first-of-type > button {
+  margin-top: 30px;
+}
+
+body > section:nth-child(4)> section .video {
+  padding-top: 40px;
+}
+body > section:nth-child(5) {
+  padding:60px 120px;
+}
+body > section:nth-child(5) > * {
+  float: left;
+  width:33.33%;
+  padding: 40px;
+  padding-bottom:0;
+}
+
+
+body > section:nth-child(5) > * > div {
+  margin:0 auto;
+}
+body > section:nth-child(5) > * > hgroup {
+  width: 200px;
+  padding: 5px 20px 20px 20px;
+  background: black;
+  color: white;
+  text-align: center;
+  transform: translateY(-40px);
+  margin: 0 auto;
+}
+
+body > section:nth-child(6) {
+  background-color: lightgrey;
+  background-image: url("../images/dancepromo.png");
+  background-size: cover;
+  margin: 0 40px;
+  padding: 80px 600px 80px 100px;
+}
+
+body > section:nth-child(7) {
+  padding: 40px 80px;
+}
+
+body > section:nth-child(7) > *{
+  margin: 20px 10%;
+  text-align: center;
+}
+body > section:nth-child(7) > section {
+  padding: 10px 12%;
+}
+body > section:nth-child(7) > section > * {
+  float: left;
+  width: 33.33%;
+  margin:20px auto;
+  padding: 10px;
+}
+
+body > section:nth-child(7) > section > section > div {
+  margin: 10px auto;
+
+}
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
