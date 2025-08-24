@@ -5,6 +5,9 @@ Static website for a Polynesian Dance Studio
 
 **Link to project:** https://mstouttech.github.io/pacific-pulse/index
 
+![pacific-pulse-demo-v1](https://github.com/user-attachments/assets/22e1d4fd-51ee-46ad-93ee-8f4f4e6bbf4e)
+
+
 
 ## How It's Made:
 
